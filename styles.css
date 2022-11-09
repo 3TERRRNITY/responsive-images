@@ -33,15 +33,21 @@
   height: fit-content;
 }
 
-.container p,
-.container h1 {
-  font-size: 20px;
+.container__text {
   padding: 30px;
 }
 
-@media screen and (max-width: 500px) {
+.container__text h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1050px) {
   .hero {
     margin: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .illustration img {
@@ -53,13 +59,5 @@
   .footer p {
     font-size: 25px;
     padding: 50px;
-  }
-}
-
-@media screen and (max-width: 451px) {
-  .container p,
-  .container h1 {
-    padding: 15px;
-    font-size: 10px;
   }
 }
